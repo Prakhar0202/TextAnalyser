@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
