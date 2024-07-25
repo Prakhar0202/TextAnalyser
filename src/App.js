@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
-// import { useState } from "react";
 import React, { useState} from 'react';
 import Alert from './components/Alert';
 
@@ -22,7 +20,7 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null);
-  }, 1500);
+  }, 1800);
 }
 
 
@@ -31,11 +29,13 @@ const  toggleMode = () => {
       setMode('dark');
       document.body.style.backgroundColor = '#052c65';
       showAlert("Dark mode has been enabled","success");
+      document.title = 'Text Analyser - Dark Mode';
     }
     else{
       setMode('light')
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor = '#ddd6e7';
       showAlert("Light mode has been enabled","success");
+      document.title = 'Text Analyser - Light Mode';
 
     }
   }
@@ -45,7 +45,7 @@ const  toggleMode = () => {
       <Navbar title="Text Analyser" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
-        <TextForm heading="Enter the text to analyse" showAlert={showAlert} />
+        <TextForm heading="Enter the text to Analyse" showAlert={showAlert} mode={mode}/>
         {/* <About/> */}
       </div>
     </>
