@@ -17,11 +17,10 @@ export default function Navbar(props) {
             <Link className="nav-link active" aria-current="page" style = {{color: props.mode==='dark'?'white':'black'}} to="/">Home</Link>
           </li>
           <li className="nav-item">
-          
-          <Link to='About/' className="nav-link" style = {{color: props.mode==='dark'?'white':'black'}} >{props.aboutText}</Link>
+            <Link className="nav-link" style = {{color: props.mode==='dark'?'white':'black'}} to="/About">{props.aboutText}</Link>
          </li>
         </ul>
-          <div className="form-check form-switch my-3 mx-5">
+          <div className="form-check form-switch my-3 ">
   <input className="form-check-input " onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" style = {{color: props.mode==='dark'?'white':'black'}} htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
 </div>
@@ -41,4 +40,3 @@ Navbar.defaultProps = {
   title: "Set Title",
   aboutText: "About",
 };
-

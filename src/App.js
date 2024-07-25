@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
                 />
               }
             />
-            <Route exact path="/About" element={<About />} />
+            <Route exact path="/About" element={<About mode={mode} />} />
           </Routes>
         </div>
       </Router>
