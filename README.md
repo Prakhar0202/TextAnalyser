@@ -34,3 +34,6 @@ Welcome to **Text Analyser**, the ultimate React application designed to streaml
 
 Experience unparalleled ease and efficiency in text editing. Try **Text Analyser** today and transform the way you handle your text!
 
+Here's the link to the TextAnalyser React app:    https://prakhar0202.github.io/TextAnalyser
+
+Feel free to explore and analyze text with ease!
