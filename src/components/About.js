@@ -1,15 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 export default function About(props) {
-
-    // const [myStyle, setMyStyle] = useState({
-    //     color: 'black',
-    //     backgroundColor: 'white'
-    // })    
    let myStyle = {
     color: props.mode === 'dark'?'white':'black',
     backgroundColor: props.mode === 'dark'?'#165497':'#928cbb',
-    border : "2px solid",
+    border : "1px solid",
     borderColor: props.mode === 'dark'?'white':'black'
    }
     
@@ -19,7 +14,7 @@ export default function About(props) {
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button" type="button" style={{backgroundColor: props.mode === 'dark'?'#165497':'#928cbb'}} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button className="accordion-button" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <strong>Analyse your text</strong> 
                     </button>
                     </h2>

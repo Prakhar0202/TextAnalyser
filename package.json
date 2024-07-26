@@ -1,5 +1,5 @@
 {
-  "name": "textutils",
+  "name": "textanalyser",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object":"^7.0.0-0",
     "@rollup/plugin-terser": "^0.4.4"
   }
 }

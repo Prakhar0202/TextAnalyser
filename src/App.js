@@ -25,12 +25,10 @@ function App() {
       setMode("dark");
       document.body.style.backgroundColor = "#052c65";
       showAlert("Dark mode has been enabled", "success");
-      document.title = "Text Analyser - Dark Mode";
     } else {
       setMode("light");
       document.body.style.backgroundColor = "#ddd6e7";
       showAlert("Light mode has been enabled", "success");
-      document.title = "Text Analyser - Light Mode";
     }
   };
 
@@ -42,10 +40,11 @@ function App() {
         <div className="container my-3">
           <Routes>
             <Route
-             exact path="/"
+              exact
+              path="/"
               element={
                 <TextForm
-                  heading="Enter the text to Analyse"
+                  heading="Try Text Analyser - Word counter, Character counter, Remove Extra Spaces"
                   showAlert={showAlert}
                   mode={mode}
                 />
