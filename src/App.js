@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar title="Text Analyser" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
